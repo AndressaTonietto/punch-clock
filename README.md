@@ -2,7 +2,6 @@
 
 Simple time recorder (clock machine) created with React.js and json-server.
 
----
 ## Table of Contents
 
 - [General info](#general-info)
@@ -12,13 +11,11 @@ Simple time recorder (clock machine) created with React.js and json-server.
 - [Status](#status)
 - [License](#license)
 
----
 
 ## General info
 
 Punch Clock is a web app to control the working hours for a company's employees. The app will be used by each employee to manage and keep an account of. 
 
----
 
 ## Features
 
@@ -30,7 +27,6 @@ Punch Clock is a web app to control the working hours for a company's employees.
 - authentication
 - testing
 
----
 
 ## Setup
 
@@ -50,7 +46,6 @@ node server.js
 
 Runs the database
 
----
 
 ## Technologies
 
@@ -59,13 +54,11 @@ Runs the database
 - zustand for state management
 - json-server for the database
 
----
 
 ## Status
 
 The project is still being developed.
 
----
 
 ## License
 
