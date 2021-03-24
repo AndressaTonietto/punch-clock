@@ -6,13 +6,13 @@ import { calculateTimeBank } from 'utils';
 
 const RecordsTable = ({ records }) => (
   <table>
-    <caption>Last week punches</caption>
+    <caption>Last week punches</caption>
     <thead>
       <tr>
         <th>Date</th>
         <th>Arriving hour</th>
         <th>Exit hour</th>
-        <th>Break Duration</th>
+        <th>Break (min)</th>
         <th>Time bank (min)</th>
       </tr>
     </thead>
