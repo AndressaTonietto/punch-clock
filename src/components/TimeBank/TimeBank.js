@@ -5,7 +5,7 @@ const StyledTimeBank = styled.div``;
 
 const TimeBank = ({ timeBank, overtime }) => (
   <StyledTimeBank overTime={overtime}>
-    Your time bank: <span>{timeBank}</span>
+    Your time bank: <span>{timeBank}</span> min
   </StyledTimeBank>
 );
 
