@@ -6,7 +6,7 @@ import RecordsTable from './RecordsTable';
 
 const RecordsTableContainer = () => {
   const records = useStore(state => state.timeRecords);
-  const setRecords = useStore(state => state.setPlease);
+  const setRecords = useStore(state => state.setRecords);
 
   const getRecords = async () => {
     try {
