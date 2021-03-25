@@ -12,7 +12,8 @@ const TimeBankContainer = () => {
     try {
       const url = 'records?_sort=id&_order=desc&_start=0&_end=22';
       const res = await api.get(url);
-      setTimeBank(calculateTimeBank(res.data));
+
+      if (res.data.length) setTimeBank(calculateTimeBank(res.data));
     } catch (e) {
       console.log(e);
     }
@@ -21,6 +22,7 @@ const TimeBankContainer = () => {
   useEffect(() => {
     getLastMonthRecords();
   }, []);
+
   return <TimeBank timeBank={timeBank} overtime={timeBank > 0} />;
 };
 
