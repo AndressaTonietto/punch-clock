@@ -9,7 +9,7 @@ import styled from 'styled-components';
 const Container = styled.div`
   background-color: #e0e0e0;
   min-height: 100vh;
-  padding: 10px;
+  padding: 30px;
 
   @media (min-width: 600px) {
     display: flex;

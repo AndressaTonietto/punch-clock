@@ -8,7 +8,7 @@ const StyledTimeBank = styled.div`
   color: #00122e;
 
   span {
-    color: ${({ overtime }) => (overtime && '#4B7F52') || '#e94f37'};
+    color: ${({ overtime }) => (overtime && '#069C57') || '#e94f37'};
   }
 `;
 

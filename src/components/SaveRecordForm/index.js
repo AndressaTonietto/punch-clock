@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 import api from 'services/api';
 import styled from 'styled-components';
-import { GrDocumentTime } from 'react-icons/gr';
 
 import { useStore } from 'store';
 import { calculateTimeBank, convertToDate } from 'utils';
@@ -62,15 +61,19 @@ const Button = styled.button`
   border-radius: 4px;
   background: #e0e0e0;
   box-shadow: 6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
-  width: 40px;
+  width: 150px;
   height: 40px;
-  margin: 18px 15px 0 15px;
+  margin: 0px 15px 5px 15px;
   align-self: flex-end;
 
   &:active {
     border-radius: 0px;
     background: #e0e0e0;
     box-shadow: inset 6px 6px 9px #cacaca, inset -6px -6px 9px #f6f6f6;
+  }
+
+  @media (min-width: 600px) {
+    width: 110px;
   }
 `;
 
@@ -91,6 +94,7 @@ const ErrorMessage = styled.div`
   align-items: center;
   justify-content: space-evenly;
   margin-top: 18px;
+  color: #e94f37;
 `;
 
 const Label = styled.label`
@@ -118,15 +122,15 @@ const RecordForm = () => {
     setError('');
 
     if (!punchIn || !punchOut || !breakDuration) {
-      setError('All fields are required');
+      setError('All fields are required!');
       return false;
     }
     if (punchIn > punchOut) {
-      setError('Punch In cannot be greater than Punch Out');
+      setError('Punch In cannot be greater than Punch Out!');
       return false;
     }
     if (timePassed() < breakDuration) {
-      setError('Break cannot be greater than the total time passed');
+      setError('Break cannot be greater than the total time passed!');
       return false;
     }
 
@@ -192,9 +196,7 @@ const RecordForm = () => {
             min={1}
           />
         </FormGroup>
-        <Button type="submit">
-          <GrDocumentTime />
-        </Button>
+        <Button type="submit">Save</Button>
       </Form>
       <ErrorMessage>{error}</ErrorMessage>
     </Card>
