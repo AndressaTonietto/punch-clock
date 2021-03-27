@@ -19,8 +19,8 @@ const Records = ({ records }) => (
             <th>Date</th>
             <th>Punch In</th>
             <th>Punch Out</th>
-            <th>Break (min)</th>
-            <th>Time Bank (min)</th>
+            <th>Break</th>
+            <th>Time Bank</th>
           </tr>
           {records.map(record => (
             <tr>
