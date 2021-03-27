@@ -32,7 +32,7 @@ Punch Clock is a web app to control the working hours for a company's employees.
 
 To run this project, install it locally using npm: 
 
-```bash
+```
 cd ../punch-clock
 node server.js
 ```
