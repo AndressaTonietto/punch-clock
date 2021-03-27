@@ -5,7 +5,6 @@ import SaveRecordForm from 'components/SaveRecordForm';
 import Records from 'components/Records';
 
 import styled from 'styled-components';
-import './App.css';
 
 const Container = styled.div`
   background-color: #e0e0e0;
