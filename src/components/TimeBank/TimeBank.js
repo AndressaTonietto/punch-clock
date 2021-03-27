@@ -5,6 +5,7 @@ const StyledTimeBank = styled.div`
   color: #f4f4f9;
   font-size: calc(20px + 2vmin);
   padding: 20px;
+  color: #00122e;
 
   span {
     color: ${({ overtime }) => (overtime && '#4B7F52') || '#e94f37'};
