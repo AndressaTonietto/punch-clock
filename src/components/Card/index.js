@@ -2,10 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const NeumorphismCard = styled.div`
-  border-radius: 0px;
-  background: #a18ca1;
-  box-shadow: -5px 5px 9px #917e91, 5px -5px 9px #b19ab1;
-  display: flex;
+  border-radius: 4px;
+  background: #e0e0e0;
+  box-shadow: 6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
   color: #00122e;
   flex-direction: ${({ flexDirection }) =>
     (flexDirection === 'row' && 'row') || 'column'};

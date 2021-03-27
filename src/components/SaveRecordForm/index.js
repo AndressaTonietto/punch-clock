@@ -34,8 +34,8 @@ const Form = styled.form`
       outline: none;
     }
     border-radius: 0px;
-    background: #a18ca1;
-    box-shadow: inset -5px 5px 9px #917e91, inset 5px -5px 9px #b19ab1;
+    background: #e0e0e0;
+    box-shadow: inset 6px 6px 9px #cacaca, inset -6px -6px 9px #f6f6f6;
 
     /* Firefox */
     input[type='number'] {
