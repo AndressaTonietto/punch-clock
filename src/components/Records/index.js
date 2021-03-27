@@ -15,7 +15,9 @@ const RecordsContainer = () => {
 
   const getRecords = async () => {
     try {
-      const res = await api.get('records?_sort=id&_order=desc&_start=0&_end=7');
+      const res = await api.get(
+        `records?_sort=id&_order=desc&_start=0&_end=${sevenDays}`
+      );
       setRecords(res.data);
     } catch (e) {
       console.log(e);
