@@ -9,11 +9,11 @@ const NeumorphismCard = styled.div`
   flex-direction: ${({ flexDirection }) =>
     (flexDirection === 'row' && 'row') || 'column'};
 
-  margin: 0 20px 30px 20px;
+  margin-bottom: 30px;
   @media (min-width: 600px) {
     display: flex;
     align-items: center;
-    min-width: 500px;
+    min-width: 600px;
     flex-direction: ${({ flexDirection }) =>
       (flexDirection === 'row' && 'row') || 'column'};
   }

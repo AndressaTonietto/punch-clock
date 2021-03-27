@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const Table = styled.table`
   text-align: center;
   padding: 20px 10px;
+  width: 100%;
   color: #00122e;
 `;
 

@@ -13,9 +13,9 @@ import Card from 'components/Card';
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
 
-  @media (min-width: 640px) {
+  @media (min-width: 600px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,9 +33,6 @@ const Form = styled.form`
     :focus {
       outline: none;
     }
-    border-radius: 0px;
-    background: #e0e0e0;
-    box-shadow: inset 6px 6px 9px #cacaca, inset -6px -6px 9px #f6f6f6;
 
     /* Firefox */
     input[type='number'] {
@@ -51,17 +48,30 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
-  width: 85px;
+  border-radius: 0px;
+  background: #e0e0e0;
+  box-shadow: inset 6px 6px 9px #cacaca, inset -6px -6px 9px #f6f6f6;
+  width: 100px;
   height: 20px;
   margin: 0 15px;
   flex: 1;
+  margin-bottom: 5px;
 `;
 
 const Button = styled.button`
+  border-radius: 4px;
+  background: #e0e0e0;
+  box-shadow: 6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
   width: 40px;
   height: 40px;
   margin: 18px 15px 0 15px;
   align-self: flex-end;
+
+  &:active {
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow: inset 6px 6px 9px #cacaca, inset -6px -6px 9px #f6f6f6;
+  }
 `;
 
 const FormGroup = styled.div`
@@ -69,7 +79,7 @@ const FormGroup = styled.div`
   align-items: center;
   justify-content: space-evenly;
 
-  @media (min-width: 640px) {
+  @media (min-width: 600px) {
     display: flex;
     flex-direction: column;
   }
