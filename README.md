@@ -32,6 +32,13 @@ Punch Clock is a web app to control the working hours for a company's employees.
 
 To run this project, install it locally using npm: 
 
+```bash
+cd ../punch-clock
+node server.js
+```
+
+Runs the database
+
 ```npm start
 cd ../punch-clock
 npm install
@@ -39,12 +46,7 @@ npm start
 ```
 Runs the app.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-```bash
-cd ../punch-clock
-node server.js
-```
 
-Runs the database
 
 
 ## Technologies
