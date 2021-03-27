@@ -112,7 +112,7 @@ const RecordForm = () => {
       return false;
     }
     if (punchIn > punchOut) {
-      setError('Punch Out cannot be greater than Punch In');
+      setError('Punch In cannot be greater than Punch Out');
       return false;
     }
     if (timePassed() < breakDuration) {
