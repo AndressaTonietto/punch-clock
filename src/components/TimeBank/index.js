@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { calculateTimeBank } from 'utils';
 import { useStore } from 'store';
 import api from 'services/api';
+import Card from 'components/Card';
 import TimeBank from './TimeBank';
 
 const TimeBankContainer = () => {
@@ -23,7 +24,11 @@ const TimeBankContainer = () => {
     getLastMonthRecords();
   }, []);
 
-  return <TimeBank timeBank={timeBank} overtime={timeBank > 0} />;
+  return (
+    <Card>
+      <TimeBank timeBank={timeBank} overtime={timeBank > 0} />
+    </Card>
+  );
 };
 
 export default TimeBankContainer;
