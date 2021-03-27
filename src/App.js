@@ -1,20 +1,31 @@
 import React from 'react';
 
 import TimeBank from 'components/TimeBank';
-import Form from 'components/SaveRecordForm';
-import RecordsTable from 'components/RecordsTable';
+import SaveRecordForm from 'components/SaveRecordForm';
+import Records from 'components/Records';
 
+import styled from 'styled-components';
 import './App.css';
+
+const Container = styled.div`
+  background-color: #a18ca1;
+  min-height: 100vh;
+  padding: 50px;
+
+  @media (min-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <TimeBank />
-        <Form />
-        <RecordsTable />
-      </header>
-    </div>
+    <Container>
+      <TimeBank />
+      <SaveRecordForm />
+      <Records />
+    </Container>
   );
 }
 
