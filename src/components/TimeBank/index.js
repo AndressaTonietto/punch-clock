@@ -26,7 +26,7 @@ const TimeBankContainer = () => {
 
   return (
     <Card>
-      <TimeBank timeBank={timeBank} overtime={timeBank > 0} />
+      <TimeBank timeBank={timeBank} overtime={timeBank >= 0} />
     </Card>
   );
 };
