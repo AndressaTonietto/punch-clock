@@ -188,7 +188,7 @@ const RecordForm = () => {
           />
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="punchIn">Break</Label>
+          <Label htmlFor="punchIn">Break (min)</Label>
           <Input
             type="number"
             id="breakDuration"
