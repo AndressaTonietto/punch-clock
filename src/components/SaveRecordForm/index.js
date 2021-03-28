@@ -58,9 +58,9 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  border-radius: 4px;
+  border-radius: 0px;
   background: #e0e0e0;
-  box-shadow: 6px 6px 12px #5a5a5a, -6px -6px 12px #ffffff;
+  box-shadow: 5px 5px 9px #cacaca, -5px -5px 9px #f6f6f6;
   width: 150px;
   height: 40px;
   margin: 0px 15px 5px 15px;
@@ -69,12 +69,13 @@ const Button = styled.button`
   &:active {
     border-radius: 0px;
     background: #e0e0e0;
-    box-shadow: inset 6px 6px 9px #cacaca, inset -6px -6px 9px #f6f6f6;
+    box-shadow: inset 5px 5px 9px #cacaca, inset -5px -5px 9px #f6f6f6;
   }
 
   @media (min-width: 600px) {
     width: 110px;
   }
+  font-weigth: bold;
 `;
 
 const FormGroup = styled.div`
