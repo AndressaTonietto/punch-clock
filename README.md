@@ -68,10 +68,10 @@ npm start
 
 ## Technologies
 
-- React
-- styled-components
-- zustand for state management
-- json-server for the database
+- [React](https://reactjs.org/)
+- [styled-components](https://styled-components.com/)
+- [zustand](https://www.npmjs.com/package/zustand) for state management
+- [json-server](https://www.npmjs.com/package/json-server) for the database
 
 
 ## Status
