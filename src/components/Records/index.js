@@ -7,7 +7,7 @@ import { calculateTimeBank } from 'utils';
 
 import Records from 'components/Records/Records';
 
-const sevenDays = 7;
+const twentyDays = 20;
 
 const RecordsContainer = () => {
   const records = useStore(state => state.timeRecords);
@@ -16,7 +16,7 @@ const RecordsContainer = () => {
   const getRecords = async () => {
     try {
       const res = await api.get(
-        `records?_sort=id&_order=desc&_start=0&_end=${sevenDays}`
+        `records?_sort=id&_order=desc&_start=0&_end=${twentyDays}`
       );
       setRecords(res.data);
     } catch (e) {
@@ -30,7 +30,7 @@ const RecordsContainer = () => {
 
   return (
     <Records
-      records={records.slice(0, sevenDays).map(record => ({
+      records={records.slice(0, twentyDays).map(record => ({
         date: format(new Date(record?.createdAt), 'MM/dd/yyyy'),
         punchIn: record.punchIn,
         punchOut: record.punchOut,
