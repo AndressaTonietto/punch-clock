@@ -30,31 +30,48 @@ Punch Clock is a web app to control the working hours for a company's employees.
 
 ## Setup
 
-To run this project, install it locally using npm: 
+To run this project locally:
+
+1. Clone the repo
 
 ```
-cd ../punch-clock
+git clone https://github.com/AndressaTonietto/punch-clock.git
+```
+
+2. Go to the project directory
+
+```
+cd punch-clock
+```
+
+3. Install NPM packages
+
+```
+npm install
+```
+
+4. Run the database
+
+```
 node server.js
 ```
 
-Runs the database
+5. Run the app in development mode
 
-```npm start
-cd ../punch-clock
-npm install
+```
 npm start
 ```
-Runs the app.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+6. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
 
 
 ## Technologies
 
-- React
-- styled-components
-- zustand for state management
-- json-server for the database
+- [React](https://reactjs.org/)
+- [styled-components](https://styled-components.com/)
+- [zustand](https://www.npmjs.com/package/zustand) for state management
+- [json-server](https://www.npmjs.com/package/json-server) for the database
 
 
 ## Status
